@@ -23,7 +23,10 @@ https://github.com/5ide6urnslab/iRobotCreate2
 The addon should sit in **/Arduino/libraries/** .
 
 ## Running the Example Project
-1) iRobot Create 2 + ROS(coming soon)
+An example project is provided in the **example** folder.
+
+### 1) Create 2 DJ Turntable I (coming soon)
+This example is the phonograph using iRobot Create 2. The iRobot Create 2 is rotated and plays the music of LP Record. Please see below for the detail operation.
 
 https://youtu.be/TV7yp2ephXI
 
