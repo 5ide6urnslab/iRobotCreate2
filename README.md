@@ -23,8 +23,9 @@ https://github.com/5ide6urnslab/iRobotCreate2
 The addon should sit in **/Arduino/libraries/** .
 
 ## Running the Example Project
-1) iRobot Create 2 + ROS
-coming soon.
+1) iRobot Create 2 + ROS(coming soon)
+
+https://youtu.be/TV7yp2ephXI
 
 
 ## Credits
