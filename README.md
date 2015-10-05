@@ -28,14 +28,8 @@ coming soon.
 
 
 ## Credits
-1) iRobot Create 2
+1) iRobot Create 2 : http://www.irobot.com/About-iRobot/ST...
 
-http://www.irobot.com/About-iRobot/ST...
+2) Arduino UNO, MEGA R3 : https://www.arduino.cc
 
-2) Arduino UNO, MEGA R3
-
-https://www.arduino.cc
-
-5) ROS
-
-http://www.ros.org
+5) ROS : http://www.ros.org
