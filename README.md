@@ -6,7 +6,7 @@ http://opensource.org/licenses/mit-license.php
 
 
 ## Description
-The iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. To Be Developed.
+The iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. We are currently developing that.
 
 The Arduino is a physical computing platform open source toolkit.
 
