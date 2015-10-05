@@ -20,6 +20,8 @@ https://www.arduino.cc/en/Guide/HomePage
 To get a copy of the repository you can download the source from
 https://github.com/5ide6urnslab/iRobotCreate2
 
+The addon should sit in _/Arduino/libraries/_
+
 ## Running the Example Project
 coming soon.
 
