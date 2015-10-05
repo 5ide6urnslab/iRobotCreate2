@@ -1,6 +1,6 @@
 # iRobotCreate2
-Copyright (c) 2015- 5ide6urns lab All right reserved.
-Released under the MIT license.
+Copyright (c) 2015- 5ide6urns lab All right reserved. 
+Released under the MIT license. 
 http://opensource.org/licenses/mit-license.php
 
 
@@ -16,7 +16,7 @@ To use the iRobotCreate2, first you need to download and install
 https://www.arduino.cc/en/Guide/HomePage
 
 To get a copy of the repository you can download the source from
-
+https://github.com/5ide6urnslab/iRobotCreate2
 
 ## Running the Example Project
 coming soon.
