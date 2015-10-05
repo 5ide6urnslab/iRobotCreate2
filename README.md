@@ -1,28 +1,28 @@
-# iRobotCreate2 h1
+# iRobotCreate2
 Copyright (c) 2015- 5ide6urns lab All right reserved.
 Released under the MIT license.
 http://opensource.org/licenses/mit-license.php
 
 
-## Description h2
+## Description
 The iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO, MEGA R3.
 The Arduino is a physical computing platform open source toolkit.
 
 https://www.arduino.cc
 
 
-## Installation h2
+## Installation
 To use the iRobotCreate2, first you need to download and install
 https://www.arduino.cc/en/Guide/HomePage
 
 To get a copy of the repository you can download the source from
 
 
-## Running the Example Project h2
+## Running the Example Project
 coming soon.
 
 
-## Credits h2
+## Credits
 1) iRobot Create 2
 http://www.irobot.com/About-iRobot/ST...
 
