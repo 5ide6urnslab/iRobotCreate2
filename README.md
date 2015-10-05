@@ -33,7 +33,7 @@ This example is the phonograph using iRobot Create 2. The iRobot Create 2 is rot
 alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 ## Reference
-This iRobotCreate2 has the following in reference. 
+We have the following in reference. 
 
 http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_600_Open_Interface_Spec_0908.pdf?la=en
 
