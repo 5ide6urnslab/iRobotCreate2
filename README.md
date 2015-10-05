@@ -37,4 +37,4 @@ alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 2) Arduino UNO, MEGA R3 : https://www.arduino.cc
 
-5) ROS : http://www.ros.org
+3) ROS : http://www.ros.org
