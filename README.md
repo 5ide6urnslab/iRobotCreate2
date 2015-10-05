@@ -28,8 +28,9 @@ An example project is provided in the **example** folder.
 #### Create 2 DJ Turntable I (coming soon)
 This example is the phonograph using iRobot Create 2. The iRobot Create 2 is rotated and plays the music of LP Record. Please see below for the detail operation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TV7yp2ephXI" frameborder="0" allowfullscreen></iframe>
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=TV7yp2ephXI
+" target="_blank"><img src="http://img.youtube.com/vi/TV7yp2ephXI/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Credits
 1) iRobot Create 2 : http://www.irobot.com/About-iRobot/ST...
