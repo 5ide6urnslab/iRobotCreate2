@@ -16,6 +16,7 @@ https://www.arduino.cc
 ## Installation
 To use the iRobotCreate2, first you need to download and install
 https://www.arduino.cc/en/Guide/HomePage
+
 To get a copy of the repository you can download the source from
 https://github.com/5ide6urnslab/iRobotCreate2
 
@@ -25,7 +26,9 @@ coming soon.
 
 ## Credits
 1) iRobot Create 2
+
 http://www.irobot.com/About-iRobot/ST...
 
 2) Arduino UNO, MEGA R3
+
 https://www.arduino.cc
