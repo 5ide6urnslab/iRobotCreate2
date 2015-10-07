@@ -37,7 +37,7 @@ We have the following in reference.
 
 http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_600_Open_Interface_Spec_0908.pdf?la=en
 
-## Credits
+## Copyright
 1) © 2015 All Rights Reserved. iRobot, Roomba and Create are registered trademarks of iRobot Corporation.
    
    http://www.irobot.com/About-iRobot/ST...
