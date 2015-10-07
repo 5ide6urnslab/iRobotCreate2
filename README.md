@@ -38,8 +38,14 @@ We have the following in reference.
 http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_600_Open_Interface_Spec_0908.pdf?la=en
 
 ## Credits
-1) iRobot Create 2 : http://www.irobot.com/About-iRobot/ST...
+1) © 2015 All Rights Reserved. iRobot, Roomba and Create are registered trademarks of iRobot Corporation.
+   
+   http://www.irobot.com/About-iRobot/ST...
 
-2) Arduino UNO, MEGA R3 : https://www.arduino.cc
+2) © 2015 All Rights Reserved.  Arduino is a trademark of Arduino SA.
+   
+   https://www.arduino.cc
 
-3) ROS : http://www.ros.org
+3) © 2015 All Rights Reserved. ROS is a trademark of the ROS.org.
+
+   http://www.ros.org
