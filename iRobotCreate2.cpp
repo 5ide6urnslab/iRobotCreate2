@@ -2,7 +2,7 @@
 /*************************************************************************
  * File Name          : iRobotCreate2.cpp
  * Author             : Show Kawabata
- * Version            : v1.02
+ * Version            : v1.00
  * Date               : 9/15/2015
  * Parts required     : Arduino UNO/MEGA 2560 R3 , iRobot Create 2
  * Description        :
@@ -11,12 +11,6 @@
  *                      http://opensource.org/licenses/mit-license.php
  *
  * Copyright          : Copyright (C) 2015 5ide6urns lab All right reserved.
- *
- * History            : 7/28/2015   Create on.
- *                      8/20/2015   [Bug fixed] add Preprocessor "Arduino type".
- *                                      ARDUINO_UNO  = Serail
- *                                      ARDUINO_MEGA = Serial1
- *                      9/15/2015   [New func] add Software Serial function.
  **************************************************************************/
 
 #include "iRobotCreate2.h"
