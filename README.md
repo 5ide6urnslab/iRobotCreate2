@@ -26,7 +26,7 @@ The addon should sit in **/Arduino/libraries/** .
 An example project is provided in the **/example/** folder.
 
 #### Create 2 DJ Turntable I
-This example "iRobotCreate2WithROS" is the phonograph using iRobot Create 2. The iRobot Create 2 is rotated and plays the music of LP Record. Please see below for the production manual.
+This example "iRobotCreate2WithROS" is the phonograph using iRobot Create 2. The iRobot Create 2 is rotated and plays the music of LP Record. Please see below for the production manual "DJ Turntable".
 
 http://www.irobot.com/About-iRobot/STEM/Create-2/Projects.aspx
 
