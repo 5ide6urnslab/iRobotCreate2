@@ -6,7 +6,11 @@ http://opensource.org/licenses/mit-license.php
 
 
 ## Description
+#### iRobotCreate2
 This iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. We are currently developing that.
+
+#### RobotArm
+This RobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create 2.　We are currently developing that.
 
 The Arduino is a physical computing platform open source toolkit.
 
