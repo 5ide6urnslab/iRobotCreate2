@@ -12,10 +12,6 @@ This iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on A
 #### RobotArm
 This RobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create 2.　We are currently developing that.
 
-The Arduino is a physical computing platform open source toolkit.
-
-https://www.arduino.cc
-
 
 ## Installation
 To use the iRobotCreate2, first you need to download and install
