@@ -6,10 +6,10 @@ http://opensource.org/licenses/mit-license.php
 
 
 ## Description
-#### iRobotCreate2
+##### iRobotCreate2
 This iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. We are currently developing that.
 
-#### iRobotArm
+##### iRobotArm
 This iRobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create 2. We designed the new system to control the Makeblock Robotic Arm Add-on Pack in arduino. It's necessary to add the motor driver "Sparkfun TB6612FNG Breakout" and the DC/DC converter "MCW03-05S12", Potention Meter(10k). We are currently developing that.
 
 
@@ -25,7 +25,7 @@ The addon should sit in **/Arduino/libraries/** .
 ## Running the Example Project
 An example project is provided in the **/example/** folder.
 
-#### Create 2 DJ Turntable I
+##### Create 2 DJ Turntable I
 This example "iRobotCreate2WithROS" is the phonograph using iRobot Create 2. The iRobot Create 2 is rotated and plays the music of LP Record. Please see below for the production manual "DJ Turntable".
 
 http://www.irobot.com/About-iRobot/STEM/Create-2/Projects.aspx
