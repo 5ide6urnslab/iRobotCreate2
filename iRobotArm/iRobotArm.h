@@ -1,8 +1,8 @@
-#ifndef ROBOTARM_H
-#define ROBOTARM_H
+#ifndef IROBOTARM_H
+#define IROBOTARM_H
 
 /*************************************************************************
- * File Name          : RobotArm.h
+ * File Name          : iRobotArm.h
  * Author             : Show Kawabata(5ide6urns lab)
  * Version            : v0.01
  * Date               : 10/26/2015
@@ -25,14 +25,14 @@
 #endif
 
 
-class RobotArm {
+class iRobotArm {
 
 public:
 
     /**********************************************************************
      * Constructor
      **********************************************************************/
-    RobotArm(int stby, int pwmA, int aIn1, int aIn2, int potention);
+    iRobotArm(int stby, int pwmA, int aIn1, int aIn2, int potention);
 
 
     /**********************************************************************

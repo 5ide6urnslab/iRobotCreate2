@@ -1,6 +1,6 @@
 
 /*************************************************************************
- * File Name          : RobotArm.cpp
+ * File Name          : iRobotArm.cpp
  * Author             : Show Kawabata(5ide6urns lab)
  * Version            : v0.01
  * Date               : 10/26/2015
@@ -15,11 +15,11 @@
  * Copyright          : Copyright (C) 2015 5ide6urns lab All right reserved.
  **************************************************************************/
 
-#include "RobotArm.h"
+#include "iRobotArm.h"
 
 
 /*! *******************************************************************
- *  @fn         RobotArm
+ *  @fn         iRobotArm
  *  @brief      It is Constructor for RobotArm class to
  *              initialize the data and initializing process.
  *
@@ -31,7 +31,7 @@
  *  @return     void
  *  @version    v1.00
  ***********************************************************************/
-RobotArm::RobotArm(int stby, int pwmA, int aIn1, int aIn2, int potention){
+iRobotArm::iRobotArm(int stby, int pwmA, int aIn1, int aIn2, int potention){
     
     _stby      = stby;
     _pwmA      = pwmA;
@@ -60,7 +60,7 @@ RobotArm::RobotArm(int stby, int pwmA, int aIn1, int aIn2, int potention){
  *  @return     void
  *  @version    v1.00
  ***********************************************************************/
-void RobotArm::move(int speed){
+void iRobotArm::move(int speed){
     
     // disable STBY
     digitalWrite(_stby, HIGH);
@@ -99,7 +99,7 @@ void RobotArm::move(int speed){
  *  @return     void
  *  @version    v1.00
  ***********************************************************************/
-void RobotArm::stop(){
+void iRobotArm::stop(){
     
     // enable STBY
     digitalWrite(_stby, LOW);
@@ -113,7 +113,7 @@ void RobotArm::stop(){
  *  @return     void
  *  @version    v1.00
  ***********************************************************************/
-void RobotArm::getMotorPosition(int* value){
+void iRobotArm::getMotorPosition(int* value){
     
     *value = analogRead(_potention);
 }
