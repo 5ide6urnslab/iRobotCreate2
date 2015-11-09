@@ -7,7 +7,7 @@ http://opensource.org/licenses/mit-license.php
 
 ## Description
 ##### iRobotCreate2
-This iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. We are currently developing that.
+This iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. It's necessary to add the PNP transistor "2N4403(x1)" and the Rectifler "1N4001(x2)" for this system. We are currently developing that.
 
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/iRobotCreate2.jpg" width="640" height="480"/>
 
