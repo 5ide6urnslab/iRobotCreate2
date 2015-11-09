@@ -10,7 +10,9 @@ http://opensource.org/licenses/mit-license.php
 This iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. We are currently developing that.
 
 ##### iRobotArm
-This iRobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create 2. We designed the new system to control the Makeblock Robotic Arm Add-on Pack in arduino. It's necessary to add the motor driver "Sparkfun TB6612FNG Breakout" and the DC/DC converter "MCW03-05S12", Potention Meter(10k). We are currently developing that.
+This iRobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create 2. We designed the new system to control the Makeblock Robotic Arm Add-on Pack in arduino. It's necessary to add the motor driver "Sparkfun TB6612FNG Breakout" and the DC/DC converter "MCW03-05S12". We are currently developing that.
+
+<img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/iRobotArm.jpg" />
 
 
 ## Installation
