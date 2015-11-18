@@ -37,7 +37,7 @@ ros::Subscriber<std_msgs::UInt32> sub_armPosition("Arm-drivePosition", &armPosit
 
 void armPositionCb( const std_msgs::UInt32 &armPosition) {
   char tmp[64] = {0};
-  sprintf( tmp, "%s%d", "driverPosition:", armPosition.data );
+  sprintf( tmp, "%s%d", "Arm-drivePosition:", armPosition.data );
   msg.data = tmp;
   pub_msg.publish(&msg);
 
