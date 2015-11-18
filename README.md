@@ -69,3 +69,19 @@ http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_6
 
    https://www.sparkfun.com
 
+## Credit
+#####Create 2 DJ Turntable I:
+
+Creative Director + Technical Director:   Show Kawabata(5ide6urns lab)
+
+System Design + ROS Programmer        :   Shingo Masui(5ide6urns lab)
+
+Photographer                          :   Kenichi Iwasaki(5ide6urns lab)
+
+#####Create 2 DJ Turntable II:
+
+Creative Director + Technical Director:   Show Kawabata(5ide6urns lab)
+
+System Design + ROS Programmer        :   Shingo Masui(5ide6urns lab)
+
+Photographer                          :   Kenichi Iwasaki(5ide6urns lab)
