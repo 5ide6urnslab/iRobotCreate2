@@ -49,6 +49,33 @@ iRobotArm::iRobotArm(int stby, int pwmA, int aIn1, int aIn2, int potention){
 
 
 /*! *******************************************************************
+ *  @fn         iRobotArm
+ *  @brief      It is Constructor for RobotArm class to
+ *              initialize the data and initializing process.
+ *
+ *  @param[in]  stby:       The STBY pin number for TB6612FNG Breakout.
+ *              pwmA:       The PWMA pin number for TB6612FNG Breakout.
+ *              aIn1:       The AIN1 pin number for TB6612FNG Breakout.
+ *              aIn2:       The AIN2 pin number for TB6612FNG Breakout.
+ *  @return     void
+ *  @version    v1.00
+ ***********************************************************************/
+iRobotArm::iRobotArm(int stby, int pwmA, int aIn1, int aIn2){
+
+    _stby      = stby;
+    _pwmA      = pwmA;
+    _aIn1      = aIn1;
+    _aIn2      = aIn2;
+
+    pinMode(stby, OUTPUT);
+    
+    pinMode(pwmA, OUTPUT);
+    pinMode(aIn1, OUTPUT);
+    pinMode(aIn2, OUTPUT);
+}
+
+
+/*! *******************************************************************
  *  @fn         move
  *  @brief      It works the motor and changes the direction, speed.
  *
@@ -108,6 +135,7 @@ void iRobotArm::stop(){
 /*! *******************************************************************
  *  @fn         getMotorAngle
  *  @brief      It gets the Motor position from the Potention Meter.
+ *              This function is used for Potention Meter.
  *
  *  @param[out] value:  Potention Meter value
  *  @return     void

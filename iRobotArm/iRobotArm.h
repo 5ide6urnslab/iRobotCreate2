@@ -33,6 +33,7 @@ public:
      * Constructor
      **********************************************************************/
     iRobotArm(int stby, int pwmA, int aIn1, int aIn2, int potention);
+    iRobotArm(int stby, int pwmA, int aIn1, int aIn2);
 
 
     /**********************************************************************
