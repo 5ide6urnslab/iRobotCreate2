@@ -313,10 +313,6 @@ bool iRobotCreate2::getSensorData(byte packetID, int* buffer){
     byte msb = 0;
     byte lsb = 0;
     
-    Serial1.write(142);
-    Serial1.write(packetID);
-    
-    
     if(usingSoftSerial){
         // SoftSerial process
     }
@@ -324,6 +320,9 @@ bool iRobotCreate2::getSensorData(byte packetID, int* buffer){
 #if defined(ARDUINO_UNO)
         // Hardware Serial process for Arduino UNO
 #else
+        Serial1.write(142);
+        Serial1.write(packetID);
+
         if(Serial1.available() > 0){
             msb = Serial1.read();
             lsb = Serial1.read();
