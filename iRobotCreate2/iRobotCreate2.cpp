@@ -2,8 +2,8 @@
 /*************************************************************************
  * File Name          : iRobotCreate2.cpp
  * Author             : Show Kawabata
- * Version            : v1.00
- * Date               : 9/15/2015
+ * Version            : v1.01
+ * Date               : 11/26/2015
  * Parts required     : Arduino UNO/MEGA 2560 R3 , iRobot Create 2
  * Description        :
  *
@@ -15,7 +15,7 @@
 
 #include "iRobotCreate2.h"
 
-#define ARDUINO_UNO  // For the Arduino type
+#define ARDUINO_MEGA  // For the Arduino type
 
 
 /*! *******************************************************************
@@ -26,9 +26,8 @@
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.00
  *  @date       7/28/2015  v1.00:  Create on.
- *              9/15/2015  v1.02:  [New func] add Software Serial function.
  ***********************************************************************/
 iRobotCreate2::iRobotCreate2(){
     
@@ -54,9 +53,8 @@ iRobotCreate2::iRobotCreate2(){
  *              txPin:             Serial transmit pin number for software serial
  *              baudRateChangePin: baudrate for software serial
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.00
  *  @date       7/28/2015  v1.00:  Create on.
- *              9/15/2015  v1.02:  [New func] add Software Serial function.
  ***********************************************************************/
 iRobotCreate2::iRobotCreate2(bool useSoftSerial, byte rx, byte tx){
     
@@ -91,9 +89,8 @@ iRobotCreate2::iRobotCreate2(bool useSoftSerial, byte rx, byte tx){
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.00
  *  @date       7/28/2015  v1.00:  Create on.
- *              9/15/2015  v1.02:  [New func] add Software Serial function.
  ***********************************************************************/
 void iRobotCreate2::start(){
     
@@ -121,9 +118,8 @@ void iRobotCreate2::start(){
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.00
  *  @date       7/28/2015  v1.00:  Create on.
- *              9/15/2015  v1.02:  [New func] add Software Serial function.
  ***********************************************************************/
 void iRobotCreate2::stop(){
     
@@ -159,9 +155,8 @@ void iRobotCreate2::stop(){
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.00
  *  @date       7/28/2015  v1.00:  Create on.
- *              9/15/2015  v1.02:  [New func] add Software Serial function.
  ***********************************************************************/
 void iRobotCreate2::safe(){
     
@@ -191,9 +186,8 @@ void iRobotCreate2::safe(){
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.00
  *  @date       7/28/2015  v1.00:  Create on.
- *              9/15/2015  v1.02:  [New func] add Software Serial function.
  ***********************************************************************/
 void iRobotCreate2::full(){
 
@@ -260,9 +254,8 @@ void iRobotCreate2::passive(){
  *  @param[in]  right:  the right wheel velocity(-500 - 500mm/s)
  *  @param[in]  left :  the left wheel velocity(-500 - 500mm/s)
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.00
  *  @date       7/28/2015  v1.00:  Create on.
- *              9/15/2015  v1.02:  [New func] add Software Serial function.
  ***********************************************************************/
 void iRobotCreate2::drive(int right, int left){
 	clamp(right, -500, 500);    // Right wheel velocity(-500 - 500mm/s)
@@ -300,4 +293,44 @@ void iRobotCreate2::drive(int right, int left){
  *  The following commands control Roomba’s actuators: wheels, brushes,
  *  vacuum, speaker, LEDS, and buttons.
  **********************************************************************/
-// coming soon...
+
+/*! *******************************************************************
+ *  @fn         getSensorData
+ *  @brief      It requests the Input Commands to send a packet of sensor 
+ *              data bytes. There are 58 different sensor data packets.
+ *              Each provides a value of a specific sensor or group of sensors.
+ *
+ *  @param[in]  packetID:     the ID of Sensor packet.
+ *  @param[out] buffer:       the Sensor value.
+ *  @return     ret:          "true" is successful process.
+ *                            "false" is failure process.
+ *  @version    v1.01
+ *  @date       11/26/2015  v1.01:  [New func] Add the receive func of Sensor.
+ ***********************************************************************/
+bool iRobotCreate2::getSensorData(byte packetID, int* buffer){
+
+    int ret = false;
+    byte msb = 0;
+    byte lsb = 0;
+    
+    Serial1.write(142);
+    Serial1.write(packetID);
+    
+    
+    if(usingSoftSerial){
+        // SoftSerial process
+    }
+    else{
+#if defined(ARDUINO_UNO)
+        // Hardware Serial process for Arduino UNO
+#else
+        if(Serial1.available() > 0){
+            msb = Serial1.read();
+            lsb = Serial1.read();
+            *buffer = (msb << 7) | lsb;
+            ret = true;
+        }
+#endif
+    }
+    return ret;
+}

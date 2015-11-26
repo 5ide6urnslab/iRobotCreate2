@@ -4,8 +4,8 @@
 /*************************************************************************
  * File Name          : iRobotCreate2.h
  * Author             : Show Kawabata(5ide6urns lab)
- * Version            : v1.00
- * Date               : 7/28/2015
+ * Version            : v1.01
+ * Date               : 11/26/2015
  * Parts required     : Arduino UNO/MEGA 2560 R3 , iRobot Create 2
  * Description        :
  *
@@ -65,12 +65,11 @@ public:
     /**********************************************************************
      * Input Commands
      **********************************************************************/
-    // coming soon...
+    bool getSensorData(byte packetID, int* buffer);
 
 protected:
     bool usingSoftSerial;
     SoftwareSerial softSerial;
-
 
 private:
     // none
