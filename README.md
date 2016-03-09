@@ -73,6 +73,7 @@ http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_6
 #####Create 2 DJ Turntable I:
 
 Electronics:   Show Kawabata(5ide6urns lab)
+http://dum6sen5e.com
 
 Electronics:   Shingo Masui(5ide6urns lab)
 
@@ -81,6 +82,7 @@ Photographer:  Kenichi Iwasaki(5ide6urns lab)
 #####Create 2 DJ Turntable II:
 
 Electronics:   Show Kawabata(5ide6urns lab)
+http://dum6sen5e.com
 
 Electronics:   Shingo Masui(5ide6urns lab)
 
