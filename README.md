@@ -1,5 +1,5 @@
 # iRobotCreate2
-Copyright (c) 2015- 5ide6urns lab All right reserved. 
+Copyright (c) 2015 5ide6urns lab All right reserved. 
 
 Released under the MIT license. 
 http://opensource.org/licenses/mit-license.php
