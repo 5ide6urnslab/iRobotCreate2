@@ -18,13 +18,13 @@ This iRobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack 
 
 
 ## Installation
-To use the iRobotCreate2, first you need to download and install
+(1) To use the iRobotCreate2, first you need to download and install
 https://www.arduino.cc/en/Guide/HomePage
 
-To get a copy of the repository you can download the source from
+(2) To get a copy of the repository you can download the source from
 https://github.com/5ide6urnslab/iRobotCreate2
 
-The addon should sit in **/Arduino/libraries/** .
+(3) The addon should sit in **/Arduino/libraries/** .
 
 ## Running the Example Project
 An example project is provided in the **/example/** folder.
