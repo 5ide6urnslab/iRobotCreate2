@@ -1,9 +1,6 @@
 # iRobotCreate2
 This repository is the Arduino library and Arduino sketch, Circuit Diagram for the iRobot Create 2 that runs on Arduino UNO, MEGA 2560.
-
-Copyright (c) 2015 5ide6urns lab All right reserved. 
 <br><br>
-
 #### About this manual license.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />5ide6urns lab is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
