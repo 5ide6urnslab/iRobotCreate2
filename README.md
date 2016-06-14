@@ -93,5 +93,3 @@ Electronics:   Show Kawabata(5ide6urns lab)
 http://dum6sen5e.com
 
 Electronics:   Shingo Masui(5ide6urns lab)
-
-Photographer:  Kenichi Iwasaki(5ide6urns lab)
