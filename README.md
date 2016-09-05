@@ -1,5 +1,5 @@
 # iRobotCreate2
-This repository is the Arduino library and Arduino sketch, Circuit Diagram for the iRobot Create 2 that runs on Arduino UNO, MEGA 2560.
+This repository is the Arduino library and Arduino sketch, Circuit Diagram for the iRobot Create® 2 that runs on Arduino UNO, MEGA 2560.
 <br><br>
 #### About this manual license.
 
@@ -11,16 +11,15 @@ This repository is the Arduino library and Arduino sketch, Circuit Diagram for t
 Released under the MIT license. http://opensource.org/licenses/mit-license.php
 
 
-
 ## Description
 ##### iRobotCreate2
-This iRobotCreate2 is the Arduino library for the iRobot Create 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. It's necessary to add the PNP transistor "2N4403(x1)" and the Rectifler "1N4001(x2)" for this system. We are currently developing that.
+This iRobotCreate2 is the Arduino library for the iRobot Create® 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. It's necessary to add the PNP transistor "2N4403(x1)" and the Rectifler "1N4001(x2)" for this system. We are currently developing that.
 
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/iRobotCreate2.jpg" width="480px" />
 
 <br><br>
 ##### iRobotArm
-This iRobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create 2. We designed the new system to control the Makeblock Robotic Arm Add-on Pack in arduino. It's necessary to add the motor driver "Sparkfun TB6612FNG Breakout" and the DC/DC converter "MCW03-05S12". We are currently developing that.
+This iRobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create® 2. We designed the new system to control the Makeblock Robotic Arm Add-on Pack in arduino. It's necessary to add the motor driver "Sparkfun TB6612FNG Breakout" and the DC/DC converter "MCW03-05S12". We are currently developing that.
 
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/iRobotArm.jpg" width="480px" />
 
@@ -39,7 +38,7 @@ An example project is provided in the **/example/** folder.
 
 <br>
 ##### Create 2 DJ Turntable I
-This example "iRobotCreate2WithROS" is the phonograph using iRobot Create 2. The iRobot Create 2 is rotated and plays the music of LP Record(12 inch/33rpm). Please see below for the production manual "DJ Turntable".
+This example "iRobotCreate2WithROS" is the phonograph using iRobot Create® 2. The iRobot Create® 2 is rotated and plays the music of LP Record(12 inch/33rpm). Please see below for the production manual "DJ Turntable".
 
 http://www.irobot.com/About-iRobot/STEM/Create-2/Projects.aspx
 
@@ -49,8 +48,15 @@ alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 <br>
 ##### Create 2 DJ Turntable II
-This example "iRobotArmWithROS" is the Analog Record Player using iRobot Create 2 and Tone arm. The iRobot Create 2 is rotated and plays the music of LP Record(12 inch/33rpm, 45rpm). The manual and movie are coming soon to this repository.
+This example is the Analog Record Player using iRobot Create® 2 and Tonearm. We have created the DJ Turntable System using the most advanced robot in the future. The iRobot Create® 2 is used for enjoying DJ play as musical instrument. This work staged at Maker Faire Tokyo 2016. The manual and Sample Software are coming soon to this repository.
 
+http://makezine.jp/event/makers2016/dum6_sen5e/
+
+http://dum6sen5e.com/Create-2-DJ-Turntable-II
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=A3ykXC0qWKs
+" target="_blank"><img src="http://img.youtube.com/vi/A3ykXC0qWKs/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 ## Reference
 (1) iRobot Open Interface Specifition
