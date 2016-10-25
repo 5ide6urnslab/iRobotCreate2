@@ -62,6 +62,9 @@ alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 (1) iRobot Open Interface Specifition
 http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_600_Open_Interface_Spec_0908.pdf?la=en
 
+(2) uClibc++ for Arduino
+https://github.com/maniacbug/StandardCplusplus
+
 ## Copyright
 © 2015 All Rights Reserved. iRobot, Roomba and Create are registered trademarks of iRobot Corporation.
    
