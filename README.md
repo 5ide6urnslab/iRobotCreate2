@@ -65,6 +65,9 @@ http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_6
 (2) uClibc++ for Arduino
 https://github.com/maniacbug/StandardCplusplus
 
+(3) openframeworks
+http://openframeworks.cc
+
 ## Copyright
 © 2015 All Rights Reserved. iRobot, Roomba and Create are registered trademarks of iRobot Corporation.
    
@@ -102,3 +105,5 @@ Electronics:   Show Kawabata(5ide6urns lab)
 http://dum6sen5e.com
 
 Electronics:   Shingo Masui(5ide6urns lab)
+
+Photographer:  Kenichi Iwasaki(5ide6urns lab)
