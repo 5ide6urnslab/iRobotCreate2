@@ -25,7 +25,6 @@ https://github.com/5ide6urnslab/iRobotCreate2
 
 ## Running the Example Project
 An example project is provided in the **/example/** folder.
-
 <br>
 ##### Create 2 DJ Turntable I
 This example "iRobotCreate2WithROS" is the phonograph using iRobot Create® 2. The iRobot Create® 2 is rotated and plays the music of LP Record(12 inch/33rpm). Please see below for the production manual "DJ Turntable".
@@ -46,6 +45,10 @@ http://dum6sen5e.com/Create-2-DJ-Turntable-II
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=A3ykXC0qWKs
 " target="_blank"><img src="http://img.youtube.com/vi/A3ykXC0qWKs/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
+
+<br>
+##### Create 2 DJ Turntable III
+This example is the Analog Record Player using multiple iRobot Create® 2.This work is going to stage at Ogaki Mini Maker Faire 2016.
 
 ## Reference
 (1) iRobot Open Interface Specifition
@@ -74,10 +77,10 @@ http://openframeworks.cc
    https://www.sparkfun.com
 
 ## License
-#### About this manual.
+##### About this manual.
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />5ide6urns lab is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
-#### About this software. 
+##### About this software. 
 Released under the MIT license. http://opensource.org/licenses/mit-license.php
 
 ## Credit
