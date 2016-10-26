@@ -45,6 +45,7 @@ http://dum6sen5e.com/Create-2-DJ-Turntable-II
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=A3ykXC0qWKs
 " target="_blank"><img src="http://img.youtube.com/vi/A3ykXC0qWKs/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
+<img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/RobotSimuLink.png" width="340px" />
 
 <br>
 ##### Create 2 DJ Turntable III
