@@ -48,7 +48,7 @@ alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 <br>
 ##### RobotSimuLink
-This example "RobotSimuLink" control the iRobot Create® 2 and get sensors data by openframeworks v080.
+This example "RobotSimuLink" control the motor of iRobot Create® 2 and get sensors data by openframeworks v080.
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/RobotSimuLink.png" width="340px" />
 
 <br>
