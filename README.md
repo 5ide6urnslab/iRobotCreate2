@@ -65,9 +65,6 @@ http://openframeworks.cc
 © 2015 All Rights Reserved. iRobot, Roomba and Create are registered trademarks of iRobot Corporation.  
    http://www.irobot.com/About-iRobot/ST...
 
-© 2015 All Rights Reserved.  Arduino is a trademark of Arduino SA.  
-   https://www.arduino.cc
-
 © 2015 All Rights Reserved. ROS is a trademark of the ROS.org.  
    http://www.ros.org
    
