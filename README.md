@@ -37,7 +37,7 @@ alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 <br>
 ##### Create 2 DJ Turntable II
-This example "MakerFaireTokyo2016" is the Analog Record Player using iRobot Create® 2 and Tonearm. We have created the DJ Turntable System using the most advanced robot in the future. This system is controlled the tool "RobotSimulink" by openframeworks 080. The iRobot Create® 2 is used for enjoying DJ play as musical instrument. This work staged at Maker Faire Tokyo 2016.
+This example "MakerFaireTokyo2016" is the Analog Record Player using iRobot Create® 2 and Tonearm. We have created the DJ Turntable System using the most advanced robot in the future. The iRobot Create® 2 is used for enjoying DJ play as musical instrument. This work staged at Maker Faire Tokyo 2016.
 
 http://makezine.jp/event/makers2016/dum6_sen5e/  
 http://dum6sen5e.com/Create-2-DJ-Turntable-II
@@ -45,6 +45,10 @@ http://dum6sen5e.com/Create-2-DJ-Turntable-II
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=A3ykXC0qWKs
 " target="_blank"><img src="http://img.youtube.com/vi/A3ykXC0qWKs/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
+
+<br>
+##### RobotSimuLink
+This example "RobotSimuLink" control the iRobot Create® 2 and get sensors data by openframeworks v080.
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/RobotSimuLink.png" width="340px" />
 
 <br>
