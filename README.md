@@ -2,20 +2,20 @@
 This repository is the Arduino library and Arduino sketch, Circuit Diagram for the iRobot Create® 2 that runs on Arduino UNO, MEGA 2560.  
 
 ## Description
-##### iRobotCreate2
+##### iRobotCreate2  
 This iRobotCreate2 is the Arduino library for the iRobot Create® 2 that runs on Arduino UNO and Arduino MEGA 2560, Arduino Nano 3.1. It's necessary to add the PNP transistor "2N4403(x1)" and the Rectifler "1N4001(x2)" for this system. We are currently developing that.
 
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/iRobotCreate2.jpg" width="480px" />
 
 <br><br>
-##### iRobotArm
+##### iRobotArm  
 This iRobotArm is the Arduino library for the Makeblock Robotic Arm Add-on Pack that runs on Arduino UNO. This library can add a Robot Arm to iRobot Create® 2. We designed the new system to control the Makeblock Robotic Arm Add-on Pack in arduino. It's necessary to add the motor driver "Sparkfun TB6612FNG Breakout" and the DC/DC converter "MCW03-05S12". We are currently developing that.
 
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/iRobotArm.jpg" width="480px" />
 
 
 ## Installation
-(1) To use the iRobotCreate2, first you need to download and install  
+(1) To use the above library, first you need to download and install  
 https://www.arduino.cc/en/Guide/HomePage
 
 (2) To get a copy of the repository you can download the source from  
