@@ -2,8 +2,8 @@
 /*************************************************************************
  * File Name          : MakerFaireTokyo2016
  * Author             : Show Kawabata(5ide6urns lab)
- * Version            : v1.06
- * Date               : 09/01/2016
+ * Version            : v1.07
+ * Date               : 11/08/2016
  * Parts required     : Arduino MEGA 2560 R3 , XBee ZB Series 2(Digi Internatinal),
  *                      Cds 5mm Sensor(Macron Internatinal), INA226(Texas Instruments)
  * Description        :
@@ -19,16 +19,17 @@
  *                      08/26/2016 v1.04 Show Kawabata [Refactoring] Serial Sending way.
  *                      08/30/2016 v1.05 Show Kawabata [Refactoring] uClibc++ for Arduino.
  *                      09/01/2016 v1.06 Show Kawabata [Bug Fix] Compare signed and unsigned.
+ *                      11/08/2016 v1.07 Show Kawabata [Refactoring] Common Message ID.
  *************************************************************************/
 
 #include <Arduino.h>                         // For PlatformIO Input Completion.
 #include <iRobotCreate2.h>
 #include <Ina226.h>
-#include "create2_message_id.h"
+#include "message_id.h"
 #include <StandardCplusplus.h>               // uClibc++ for Arduino.
 #include <vector>
 
-using namespace Create2MessageIds;
+using namespace MessageIds;
 using namespace std;
 
 #define DEBUG
@@ -88,8 +89,8 @@ void dataCoupling(int msb, int lsb, int* value);
  *  @param[in]  void
  *  @return     void
  *  @version    v1.02
- *  @date       07/28/2016  v1.00:  Create on.
- *              08/19/2016  v1.02:  [New func] Straight Drive.
+ *  @date       07/28/2016  v1.00  Create on.
+ *              08/19/2016  v1.02  [New func] Straight Drive.
  **********************************************************************/
 void setup() {
 
@@ -135,9 +136,10 @@ void setup() {
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.02
- *  @date       07/28/2016  v1.00:  Create on.
- *              08/19/2016  v1.02:  [New func] Straight Drive.
+ *  @version    v1.07
+ *  @date       07/28/2016  v1.00  Create on.
+ *              08/19/2016  v1.02  [New func] Straight Drive.
+ *              11/08/2016  v1.07  [Refactoring] Common Message ID.
  **********************************************************************/
 void loop() {
 
@@ -160,7 +162,7 @@ void loop() {
   /**********************************
    * Control Status.(Start/Stop)
    **********************************/
-  if(_pt._id == kCreate2MsgIdStartStatus){
+  if(_pt._id == kMsgIdStartStatus){
 
     /**********************************
      * Stop Status.
@@ -185,7 +187,7 @@ void loop() {
   /**********************************
    * Drive.
    **********************************/
-  else if (_pt._id == kCreate2MsgIdDriveVelocity){
+  else if (_pt._id == kMsgIdDriveVelocity){
 
     _roomba.drive(_pt._driveR, _pt._driveL);
   }
@@ -222,10 +224,11 @@ void dataCoupling(int msb, int lsb, int* value){
  *
  *  @param[in]  void
  *  @return     result   the Recieve Status.(SUCCESS:true / FAILURE:false)
- *  @version    v1.03
+ *  @version    v1.07
  *  @date       07/28/2016  v1.00:  Create on.
  *              08/17/2016  v1.01:  [Bug Fix] Serial Data Missed.
  *              08/26/2016  v1.03:  [Refactoring] Data Coupling function.
+ *              11/08/2016  v1.07  [Refactoring] Common Message ID.
  **********************************************************************/
 boolean recieveData(){
 
@@ -286,7 +289,7 @@ boolean recieveData(){
       /**********************************
        * [Data] Drive Velocity.
        **********************************/
-      if(id_ == kCreate2MsgIdDriveVelocity){
+      if(id_ == kMsgIdDriveVelocity){
 
          /**********************************
           * Right Motor Velocity.
@@ -338,7 +341,7 @@ boolean recieveData(){
        /**********************************
         * [Data] Drive Status.
         **********************************/
-       else if(id_ == kCreate2MsgIdStartStatus){
+       else if(id_ == kMsgIdStartStatus){
 
          delay(10);
          msb_ = Serial.read();
@@ -370,7 +373,7 @@ boolean recieveData(){
        /**********************************
         * [Data] Sensor Status.
         **********************************/
-       else if(id_ == kCreate2MsgIdSensingStatus){
+       else if(id_ == kMsgIdSensingStatus){
 
          delay(10);
          msb_ = Serial.read();
@@ -510,8 +513,9 @@ void getSensorData(){
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.00
+ *  @version    v1.07
  *  @date       07/28/2016  v1.00:  Create on.
+ *              11/08/2016  v1.07  [Refactoring] Common Message ID.
  **********************************************************************/
 void sendCdsSensor(){
 
@@ -525,7 +529,7 @@ void sendCdsSensor(){
    *
    *    (Total byte number of array) / (1 element size) = array size
    */
-  sendData(kCreate2MsgIdCds, cds_, sizeof(cds_) / sizeof(cds_[0]));
+  sendData(kMsgIdCds, cds_, sizeof(cds_) / sizeof(cds_[0]));
 
   return;
 
@@ -556,8 +560,9 @@ void ina226Init(){
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.00
+ *  @version    v1.07
  *  @date       07/28/2016  v1.00:  Create on.
+ *              11/08/2016  v1.07  [Refactoring] Common Message ID.
  **********************************************************************/
 void sendIna226(){
 
@@ -598,7 +603,7 @@ void sendIna226(){
    *
    *    (Total byte number of array) / (1 element size) = array size
    */
-  sendData(kCreate2MsgIdPowerSupply, bvc_, sizeof(bvc_) / sizeof(bvc_[0]));
+  sendData(kMsgIdPowerSupply, bvc_, sizeof(bvc_) / sizeof(bvc_[0]));
 
   return;
 }
