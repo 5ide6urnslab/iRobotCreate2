@@ -2,8 +2,8 @@
 /*************************************************************************
  * File Name          : testApp.h
  * Author             : Show Kawabata(5ide6urns lab)
- * Version            : v1.05
- * Date               : 10/17/2016
+ * Version            : v1.06
+ * Date               : 11/08/2016
  * Parts required     : ofxGui, ofxOsc, ofxXmlSettings, ofxCsv
  * Description        :
  *
@@ -17,6 +17,7 @@
  *                      10/07/2016 v1.02 Show Kawabata [Bug fix] Released Vector.
  *                      10/17/2016 v1.04 Show Kawabata [Refact] Serial Transmit.
  *                      10/17/2016 v1.05 Show Kawabata [New func] Serial Receive.
+ *                      11/08/2016 v1.06 Show Kawabata [Refact] Common Message.
  *************************************************************************/
 
 #pragma once
@@ -24,9 +25,9 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 #include "ofxCsv.h"
-#include "zumo_message_id.h"
+#include "message_id.h"
 
-using namespace ZumoMessageIds;
+using namespace MessageIds;
 using namespace wng;
 
 /**************************************************
@@ -87,9 +88,9 @@ using namespace wng;
 
 
 const short searchTable[DEF_SERIAL_SEARCH_TOTAL][DEF_SERIAL_SEARCH_NUM] = {
-    {kZumoMsgIdMotorEncoder, 2},
-    {kZumoMsgIdGeoMagnetism, 3},
-    {kZumoMsgIdGeoMagnetism, 3}
+    {kMsgIdMotorEncoder, 2},
+    {kMsgIdGeoMagnetism, 3},
+    {kMsgIdAcceleration, 3}
 };
 
 

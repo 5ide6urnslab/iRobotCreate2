@@ -2,8 +2,8 @@
 /*************************************************************************
  * File Name          : testApp.cpp
  * Author             : Show Kawabata(5ide6urns lab)
- * Version            : v1.05
- * Date               : 10/17/2016
+ * Version            : v1.06
+ * Date               : 11/08/2016
  * Parts required     : ofxGui, ofxOsc, ofxXmlSettings, ofxCsv
  * Description        :
  *
@@ -18,6 +18,7 @@
  *                      10/12/2016 v1.03 Show Kawabata [New func] Graph Display.
  *                      10/17/2016 v1.04 Show Kawabata [Refact] Serial Transmit.
  *                      10/17/2016 v1.05 Show Kawabata [New func] Serial Receive.
+ *                      11/08/2016 v1.06 Show Kawabata [Refact] Common Message.
  *************************************************************************/
 
 #include "testApp.h"
@@ -29,8 +30,9 @@
  *
  *  @param[in]  id          :   Packet ID.
  *  @return     void
- *  @version    v1.05
+ *  @version    v1.06
  *  @date       10/17/2016 v1.05 [New func] Serial Receive.
+ *              11/08/2016 v1.06 [Refact] Common Message.
  **********************************************************************/
 void testApp::recieveData(unsigned char id){
 
@@ -62,16 +64,16 @@ void testApp::recieveData(unsigned char id){
     checkSum_ = _serial.readByte();
     
     if((0xFF - ((id + data_) & 0xFF)) == checkSum_){
-        if(id == kZumoMsgIdMotorEncoder){
+        if(id == kMsgIdMotorEncoder){
             _rEncoder.push_back(aData_[0]);
             _lEncoder.push_back(aData_[1]);
         }
-        else if(id == kZumoMsgIdGeoMagnetism){
+        else if(id == kMsgIdGeoMagnetism){
             _gX.push_back(aData_[0]);
             _gY.push_back(aData_[1]);
             _gZ.push_back(aData_[2]);
         }
-        else if(id == kZumoMsgIdGeoMagnetism){
+        else if(id == kMsgIdAcceleration){
             _aX.push_back(aData_[0]);
             _aY.push_back(aData_[1]);
             _aZ.push_back(aData_[2]);
@@ -269,10 +271,11 @@ void testApp::onGeomagneticPushed(bool &value){
  *
  *  @param[in]  value   :   Toggle Status(1: ON, 0: OFF)
  *  @return     void
- *  @version    v1.02
+ *  @version    v1.06
  *  @date       10/03/2016 v1.00 Create On.
  *              10/07/2016 v1.02 [Bug fix] Released Vector.
  *              10/17/2016 v1.04 [Refact] Serial Transmit.
+ *              11/08/2016 v1.06 [Refact] Common Message.
  **********************************************************************/
 void testApp::onDrivePushed(bool &value){
 
@@ -280,23 +283,21 @@ void testApp::onDrivePushed(bool &value){
     
     if(value){
         data_[0] = 1;
-        
-        /*  [Note]: About an arraySize variable.
-         *
-         *    sizeof(value)   : Total byte number of array.
-         *    sizeof(value[0]): 1 element size.
-         *
-         *    (Total byte number of array) / (1 element size) = array size
-         */
-        sendData(kZumoMsgIdStartStatus,
-                 data_, sizeof(data_) / sizeof(data_[0]));
-        
     }
     else{
         data_[0] = 0;
-        sendData(kZumoMsgIdStartStatus,
-                 data_, sizeof(data_) / sizeof(data_[0]));
     }
+    
+    /*  [Note]: About an arraySize variable.
+     *
+     *    sizeof(value)   : Total byte number of array.
+     *    sizeof(value[0]): 1 element size.
+     *
+     *    (Total byte number of array) / (1 element size) = array size
+     */
+    sendData(kMsgIdStartStatus,
+             data_, sizeof(data_) / sizeof(data_[0]));
+    
     
     return;
 }
@@ -320,8 +321,9 @@ void testApp::onSendDataPushed(){
  *
  *  @param[in]  value   :   Toggle Status(1: ON, 0: OFF)
  *  @return     void
- *  @version    v1.00
+ *  @version    v1.06
  *  @date       10/03/2016 v1.00 Create On.
+ *              11/08/2016 v1.06 [Refact] Common Message.
  **********************************************************************/
 void testApp::onSensorPushed(bool &value){
 
@@ -330,19 +332,15 @@ void testApp::onSensorPushed(bool &value){
     if(value){
         _isSensor = true;
         data_[0]  = 1;
-
-        sendData(kZumoMsgIdSensingStatus,
-                 data_, sizeof(data_) / sizeof(data_[0]));
     }
     else{
         _isSensor = false;
         data_[0]  = 0;
-
-        sendData(kZumoMsgIdSensingStatus,
-                 data_, sizeof(data_) / sizeof(data_[0]));
-
     }
-    
+
+    sendData(kMsgIdSensingStatus,
+             data_, sizeof(data_) / sizeof(data_[0]));
+
     return;
 }
 
@@ -489,13 +487,14 @@ void testApp::setup(){
  *
  *  @param[in]  void
  *  @return     void
- *  @version    v1.05
+ *  @version    v1.06
  *  @date       10/03/2016 v1.00 Create On.
  *              10/06/2016 v1.01 [New func] Logging.
  *              10/07/2016 v1.02 [Bug fix] Released Vector.
  *              10/12/2016 v1.03 [New func] Graph Display.
  *              10/17/2016 v1.04 [Refact] Serial Transmit.
  *              10/17/2016 v1.05 [New func] Serial Receive.
+ *              11/08/2016 v1.06 [Refact] Common Message.
  **********************************************************************/
 void testApp::update(){
 
@@ -509,7 +508,7 @@ void testApp::update(){
         data_[0]   = _rData;
         data_[1]   = _lData;
         
-        sendData(kZumoMsgIdDriveVelocity,
+        sendData(kMsgIdDriveVelocity,
                  data_, sizeof(data_) / sizeof(data_[0]));
     }
 
@@ -526,8 +525,8 @@ void testApp::update(){
      **************************************************/
 #if 0
     // **** For Debug. ****
-    _lEncoder.push_back(ofRandom(DEF_GUI_R_MIN, DEF_GUI_R_MAX));
-    _rEncoder.push_back(ofRandom(DEF_GUI_R_MIN, DEF_GUI_R_MAX));
+     _lEncoder.push_back(ofRandom(DEF_GUI_R_MIN, DEF_GUI_R_MAX));
+     _rEncoder.push_back(ofRandom(DEF_GUI_R_MIN, DEF_GUI_R_MAX));
     _gX.push_back(ofRandom(DEF_GUI_R_MIN, DEF_GUI_R_MAX));
     _gY.push_back(ofRandom(DEF_GUI_R_MIN, DEF_GUI_R_MAX));
     _gZ.push_back(ofRandom(DEF_GUI_R_MIN, DEF_GUI_R_MAX));
