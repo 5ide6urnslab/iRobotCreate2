@@ -326,7 +326,7 @@ bool iRobotCreate2::getSensorData(byte packetID, int* buffer){
         if(Serial1.available() > 0){
             msb = Serial1.read();
             lsb = Serial1.read();
-            *buffer = (msb << 7) | lsb;
+            *buffer = (msb << 8) | lsb;
             ret = true;
         }
 #endif
