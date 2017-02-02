@@ -68,11 +68,8 @@ http://openframeworks.cc
 ## Copyright
 © 2015 All Rights Reserved. iRobot, Roomba and Create are registered trademarks of iRobot Corporation.  
    http://www.irobot.com/About-iRobot/ST...
-
-© 2015 All Rights Reserved. ROS is a trademark of the ROS.org.  
-   http://www.ros.org
    
-© 2015 All Rights Reserved. Makeblock is a trademark of Shenzhen Maker Works Technology Co., Ltd.  
+© 2013 Makeblock Co., Ltd. All Rights Reserved.  
    http://www.makeblock.cc
 
 © 2015 All Rights Reserved. Sparkfun is a trademark of Sparkfun Electronics.  
