@@ -48,7 +48,7 @@ alt="IMAGE ALT TEXT HERE" width="320" height="240" border="10" /></a>
 
 <br>
 ##### RobotSimuLink
-This example "RobotSimuLink" control the motor of iRobot Create® 2 and get sensors data by openframeworks v080. You must add ofxGui and ofxXmlSettings, ofxCsv as addon.  
+This example "RobotSimuLink" control the motor of iRobot Create® 2 and get sensors data by openFrameworks v0.80. You must add ofxGui and ofxXmlSettings, ofxCsv as addon.  
 <img class="photo" src="https://github.com/5ide6urnslab/iRobotCreate2/blob/master/resource/RobotSimuLink.png" width="340px" />
 
 <br>
@@ -62,7 +62,7 @@ http://www.irobotweb.com/~/media/MainSite/PDFs/About/STEM/Create/iRobot_Roomba_6
 (2) uClibc++ for Arduino  
 https://github.com/maniacbug/StandardCplusplus
 
-(3) openframeworks  
+(3) openFrameworks  
 http://openframeworks.cc
 
 ## Copyright
