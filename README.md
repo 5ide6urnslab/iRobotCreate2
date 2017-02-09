@@ -85,7 +85,7 @@ Released under the MIT license. http://opensource.org/licenses/mit-license.php
 ## Credit
 #####Create 2 DJ Turntable I:
 
-Electronics:   Show Kawabata([5ide6urns lab](http://cargocollective.com/dum6sen5e,"5ide6urns lab"))  
+Electronics:   Show Kawabata([5ide6urns lab](http://cargocollective.com/dum6sen5e))  
 Electronics:   Shingo Masui(5ide6urns lab)  
 Photographer:  Kenichi Iwasaki(5ide6urns lab)
 
