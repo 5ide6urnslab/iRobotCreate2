@@ -82,12 +82,12 @@ http://openframeworks.cc
 ## Credit
 #####Create 2 DJ Turntable I:
 
-Electronics:   [Show Kawabata](http://www.dum6sen5e.com) (5ide6urns lab)  
+Electronics:   [Show Kawabata](http://www.showkawabata.net) (5ide6urns lab)  
 Electronics:   Shingo Masui (5ide6urns lab)  
 Photographer:  Kenichi Iwasaki (5ide6urns lab)
 
 #####Create 2 DJ Turntable II:
 
-Electronics:   [Show Kawabata](http://www.dum6sen5e.com) (5ide6urns lab)  
+Electronics:   [Show Kawabata](http://www.showkawabata.net) (5ide6urns lab)  
 Electronics:   Shingo Masui(5ide6urns lab)  
 Photographer:  Kenichi Iwasaki(5ide6urns lab)
